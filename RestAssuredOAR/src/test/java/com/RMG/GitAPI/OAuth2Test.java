@@ -17,6 +17,7 @@ public class OAuth2Test {
 			.formParam("grant_type", "client_credentials")
 		.when()
 			.post("http://coop.apps.symfonycasts.com/token");
+		res.then().log().all();
 		String token=res.jsonPath().get("access_token");
 		System.out.println(token);
 		

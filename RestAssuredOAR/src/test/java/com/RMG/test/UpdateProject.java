@@ -30,9 +30,5 @@ public class UpdateProject {
 			.assertThat().statusCode(200)
 		.and()
 			.log().all();
-		
-		
-		
 	}
-
 }
